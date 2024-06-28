@@ -1,11 +1,10 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { Context } from "../context/Context";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import subjectOptions from "../assets/subject.json";
 import wretch from "wretch";
 import UserSidebar from '../components/UserSidebar';
 import { localhostURL, azureURL } from '../components/Constants';
-import { useEffect } from "react";
 import axios from 'axios';
 import { PuffLoader } from "react-spinners";
 
@@ -128,7 +127,6 @@ const Profile = () => {
                 grade: newSubjectGrade
             });
             const data = response.data;
-            console.log(data)
 
             // Update local state after successful API add
             setSubjects(data);
