@@ -1,5 +1,6 @@
 import React from 'react'
 import slider from "../assets/slider2.jpg"
+import { Link } from 'react-router-dom'
 
 const Features = () => {
     return (
@@ -59,7 +60,7 @@ const Features = () => {
                 <div class="container mx-auto px-4">
                     <h2 class="text-3xl font-bold mb-4">Ready to Start Your University Journey?</h2>
                     <p class="text-lg mb-8">Sign up today and take the first step towards your future with Uni Track.</p>
-                    <a href="/register" class="btn btn-lg btn-outline btn-success">Get Started</a>
+                    <a href="/register" class="btn btn-lg btn-outline btn-success"><Link to="/register">Get Started</Link></a>
                 </div>
             </section>
 

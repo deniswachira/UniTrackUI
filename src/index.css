@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sidebar {
+  width: 250px;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 0;
+}
+
+.sidebar-collapse-btn {
+  position: absolute;
+  top: 10px;
+  right: -40px;
+}
+
+@media (max-width: 375px),
+(max-width: 514px) {
+  .loginImg {
+      max-width: 100%;
+      display: none;
+    }
+  .sidebar {
+    width: 0;
+  }
+
+  .sidebar.collapsed {
+    width: 0;
+  }
+
+  .sidebar-collapse-btn {
+    right: 0;
+  }
+     .loginPage {
+       justify-content: center;
+       margin-top: 70px;
+       width: 100%;
+     }
+}
