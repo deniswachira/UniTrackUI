@@ -1,2 +1,2 @@
-export const localhostURL = "http://localhost:5001";
-export const azureURL = "https://unitrack-backend.azurewebsites.net";
+export const azureURL = "http://localhost:5001";
+export const localhostURL = "https://unitrack-backend.azurewebsites.net"; 
